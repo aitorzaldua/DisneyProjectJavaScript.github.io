@@ -1,0 +1,16 @@
+{
+  "name": "disney",
+  "version": "1.0.0",
+  "description": "creacion de web para ver videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "aitor zaldua <aitor.zaldua@gmail.com>",
+  "license": "ISC"
+}
