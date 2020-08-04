@@ -7,22 +7,53 @@ header {
   height: 110px;
   display: flex;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  display: flex;
+  justify-content: center;
 }
-header img {
-    width: 120px;
-    margin-top: 20px;
-    margin-left: 55px;
-    margin-right: 55px;
+.imageDisney {
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 40px;
 }
+
+.imageMickey {
+  border-radius: 70px;
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 0px;
+}
+
+
+.icon {
+  width: 30px;
+  margin-top: 13px;
+  margin-left: 55px;
+  margin-right: 9px;
+  /* border-radius: 70px; */
+    /* background-color: white; */
+}
+
+
 header > div {
   color: white;
   cursor: pointer;
-  font-size: 24px;
-  padding-left: 70px;
+  font-size: 20px;
+  padding-left: 0px;
   padding-top: 14px;
+
+
 }
 header > div:hover{
   text-decoration: underline;
+  /* text-decoration-thickness: ; */
+  text-underline-position: under;
+  transition: 300ms;
+ 
 }
 .main{
   background: linear-gradient(#04050e, #131520, #131520);
@@ -32,27 +63,79 @@ header > div:hover{
   flex-direction: column;
   padding: 0px, 30px;
   /*porcentaje que queremos que vea el usuario menos el header*/
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 342px);
 }
-.footer{
+
+.carousel__container{   /*El contendero de todos los items*/
+  white-space: nowrap; /*hace que todo sea en una linea aunque desborde*/
+  margin: 70px 0px;
+  padding-bottom: 10px; /*al hace hover, se amplia por lo que necesita un padding*/
+  display: flex;
+  justify-content: flex-start;
+}
+.carousel--item{   /*el estilo de cada cuadrado de video*/
+  width: 310px;
+  height: 170px;
+  border-radius: 20px;
+  background-color: black; 
+  overflow: hidden;
+  margin-right: 25px;
+  display: inline-block;
+  justify-content: flex-start;
+  cursor: pointer;    /*al pasar se pone una manita*/
+  transition: 450ms;  /*un tiempo para las transiciones*/
+  transform-origin: center;
+}
+.carousel--item:hover{
+  width: 350px;
+  height: 220px;
+  border: 5px solid grey;
+}
+
+.preFooter  {
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 115px;
   width: 100%;
   background-color: black;
-}
-footer img {
+ }
+.preFooter img {
   width: 120px;
   margin-top: 20px;
   margin-left: 55px;
+  display: block;
+  margin: auto;
 }
-.footer a{
-  color: white;
+footer{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+footer a{
+  color: #D2D2CF;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 30px;
   text-decoration: none;
 }
-/* .footer a:hover{
-  text-decoration: underline;
-} */
+.postFooter{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+.postFooter a{
+  color: #D2D2CF;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
