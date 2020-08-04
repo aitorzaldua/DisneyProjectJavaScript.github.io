@@ -28,7 +28,9 @@ header {
   margin-right: 0px;
 }
 
-
+.imageCarousel {
+  width: 100%;
+}
 .icon {
   width: 30px;
   margin-top: 13px;
@@ -58,8 +60,8 @@ header > div:hover{
 .main{
   background: linear-gradient(#04050e, #131520, #131520);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  justify-content: flex-start;
   flex-direction: column;
   padding: 0px, 30px;
   /*porcentaje que queremos que vea el usuario menos el header*/
@@ -68,29 +70,31 @@ header > div:hover{
 
 .carousel__container{   /*El contendero de todos los items*/
   white-space: nowrap; /*hace que todo sea en una linea aunque desborde*/
-  margin: 70px 0px;
-  padding-bottom: 10px; /*al hace hover, se amplia por lo que necesita un padding*/
+  margin: 30px 100px;
+  /* padding-bottom: 10px; al hace hover, se amplia por lo que necesita un padding */
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-end; */
 }
 .carousel--item{   /*el estilo de cada cuadrado de video*/
-  width: 310px;
-  height: 170px;
+  width: 345px;
+  height: 175px;
   border-radius: 20px;
   background-color: black; 
   overflow: hidden;
   margin-right: 25px;
-  display: inline-block;
-  justify-content: flex-start;
+  display: flex;
   cursor: pointer;    /*al pasar se pone una manita*/
   transition: 450ms;  /*un tiempo para las transiciones*/
   transform-origin: center;
 }
 .carousel--item:hover{
   width: 350px;
-  height: 220px;
+  height: 185px;
   border: 5px solid grey;
+  /* background-clip: padding-box; */
 }
+
+/* .carousel--item img {width: 100%} */
 
 .preFooter  {
   display: flex;
