@@ -12,5 +12,8 @@
     "javascript"
   ],
   "author": "aitor zaldua <aitor.zaldua@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
